@@ -8,12 +8,12 @@ use App\Models\User;
 use App\Models\Task;
 use Illuminate\Http\Request;
 
-use Illuminate\Support\Str;
-use Illuminate\Support\Facades\Mail; 
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Validator;
-use App\Mail\YourEmailMailable;
-use Session;
+// use Illuminate\Support\Str;
+// use Illuminate\Support\Facades\Mail; 
+// use Illuminate\Support\Facades\Auth;
+// use Illuminate\Support\Facades\Validator;
+// use App\Mail\YourEmailMailable;
+// use Session;
 
 
 class Kernel extends ConsoleKernel
