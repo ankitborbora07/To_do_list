@@ -1,0 +1,294 @@
+*{box-sizing: border-box;  }
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+/* .open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+} */
+body{
+  overflow-x: hidden; 
+}
+.body{
+    width: 100vw; 
+    height: 100vh;
+    overflow-x: hidden; 
+    /* background: url("https://stptrans.com/wp-content/uploads/2022/01/Ecommerce-Nordics.png"); */
+    
+     /* background: url("https://img.freepik.com/free-vector/banner-holiday-sale-with-store-gift-bag-gifts-location-realistic-style-vector-illustration_548887-118.jpg?w=1380&t=st=1699959463~exp=1699960063~hmac=f1f6092d901a644a85c2de6d1613645d11691b2729312123caf3284ca44cc6d1"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+}
+/* The popup form - hidden by default */
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: #96205b; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("https://www.project-everyone.org/wp-content/uploads/2022/05/Worlds-To-Do-List-video.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+
+  }
+
+  .container .h1{
+    text-align: center;
+    color:black;
+    font-weight: 800;
+    font-size: 70px;
+  }
+
+  .modal {
+    width: 80%;
+    height: 80%;
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+   /* margin-left: 200px; */
+    justify-content: center;
+    transition: 0.4s;
+  }
+  .modal-container {
+    display: flex;
+    margin: auto;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* max-width: 40vw; */
+    /* width: 30%; */
+    width: 30%;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    /* position: absolute; */
+
+    transition-duration: 0.3s;
+    background: white;
+  }
+  .modal-title {
+    margin: 0;
+    font-weight: 400;
+    color: #55311c;
+  }
+  .form-error {
+    font-size: 1.4rem;
+    color: #b22b27;
+  }
+  .modal-desc {
+    margin: 6px 0 30px 0;
+  }
+  .modal-left {
+    display: inline-block;
+    /* margin-bottom: 10%; */
+    width: 10%;
+    height: 90%;
+    padding: 60px 30px;
+    background: rgb(255, 255, 255);
+    flex: 1;
+    /* width: 70%; */
+    transition-duration: 0.5s;
+    opacity: 1;
+  }
+
+  /* .modal-right {
+    flex: 2;
+    font-size: 0;
+    transition: 0.3s;
+    overflow: hidden;
+  }
+  .modal-right img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    -o-object-fit: cover;
+    object-fit: cover;
+    transition-duration: 1.2s;
+  } */
+
+  .modal.is-open .modal-left {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 0.1s;
+  }
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .modal-buttons a {
+    color: rgba(51, 51, 51, 0.6);
+    font-size: 14px;
+  }
+  input,
+  .btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; /* remove underline from anchors */
+  }
+  
+  input:hover,
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  /* add appropriate colors to fb, twitter and google buttons */
+  .fb {
+    background-color: #3B5998;
+    color: white;
+  }
+  
+
+  
+  .google {
+    background-color: #dd4b39;
+    color: white;
+  }
+  
+  /* style the submit button */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  #sinup[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #sinup[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  #sinup{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    color: white;
+    /* background-color: #04AA6D; */
+  }
+  
+  
+  /* Two-column layout */
+  .col {
+    /* float: left; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    padding: 0 10px;
+    margin-top: 6px;
+    /* gap: 50%; */
+  }
+  .register{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+   
+  }
+  .register a{
+    /* text-decoration: none; */
+    text-decoration: underline;
+    color: black;
+  } 
+  .register a:hover{
+    /* text-decoration: underline; */
+    opacity: 1;
+    
+  } 
+  .one{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    flex-direction: row;
+    width: 150%;
+  }
+  /* Clear floats after the columns */
+
+  
+  /* vertical line */
+ 
+  
+  /* text inside the vertical line */
+  .inner {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 8px 10px;
+  }
+  
+  /* hide some text on medium and large screens */
+  .hide-md-lg {
+    display: none;
+  }
+  
+  /* bottom container */
+  .bottom-container {
+    text-align: center;
+    background-color: #666;
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  
+  #login a{
+    gap: 10px;
+  }
+  
+  
+  #shift{
+    /* position: absolute; */
+    /* margin-top: 100px; */
+    width: 100%;
+    /* margin-left: 70%; */
+  }
+  
+  #shift1{
+    width: 100%;
+    text-align: center;
+    /* margin-left: 50%; */
+  }
+  
+  @media (max-width: 750px) {
+    .modal-container {
+      max-width: 90vw;
+    }
+
+    .modal-right {
+      display: none;
+    }
+  }
